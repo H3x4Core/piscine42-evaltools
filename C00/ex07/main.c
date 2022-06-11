@@ -11,7 +11,7 @@ int	main(void)
 	printf("\n");
 	ft_putnbr(1);
 	printf("\n");
-	ft_putnbr(42);
+	ft_putnbr(+42);
 	printf("\n");
 	ft_putnbr(2147483647);
 	printf("\n");
