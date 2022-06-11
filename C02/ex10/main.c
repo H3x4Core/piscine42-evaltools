@@ -1,6 +1,6 @@
 #include "ft_strlcpy.c"
 #include <stdio.h>
-#include <bsd/string.h>
+#include <string.h>
 
 int test_1(void)
 {
