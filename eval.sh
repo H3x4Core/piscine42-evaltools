@@ -57,10 +57,10 @@ find $FOLDER/$PROJECT -type f | grep 'ft_'
 COUNT_EX=$(find $FOLDER/$PROJECT -type f | grep -c 'ft_' | tr -d '\012\015') # count nbr present ft_files
 
 echo --- UNEXPECTED FILE CHECK ---
-find $FOLDER/$PROJECT -type f | grep -v 'ft_'
+find $FOLDER/$PROJECT -type f | grep -v 'ft_\|.git'
 
 echo --- CHECK NORMINETTE ---
-norminette -R CheckForbiddenSourceHeader $FOLDER/$PROJECT
+find $FOLDER/$PROJECT -type f -name 'ft_*' -exec norminette -R CheckForbiddenSourceHeader {} \;
 
 echo ... copy main.c
 cp -r $TMPCLONE/$PROJECT/* $FOLDER/$PROJECT/
