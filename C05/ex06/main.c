@@ -31,5 +31,6 @@ int main(void)
 			printf("Check              %d\n", check);
 		}
 	}
+	printf("-10 : %i", ft_is_prime(-10));
 	return (0);
 }
