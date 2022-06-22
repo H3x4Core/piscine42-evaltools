@@ -17,7 +17,7 @@ void test_1(int i)
 
 	printf("-- strncat --\n");
 	printf("str1 : %s\nstr2 : %s\nn    : %d\n", str1[i], str2[i], n[i]);
-	printf(ANSI_COLOR_GREEN "strncat : %s\n" ANSI_COLOR_RESET, strncat(str1[i], str2[i], n[i]));
+	printf(ANSI_COLOR_GREEN "strncat : \"%s\"\n" ANSI_COLOR_RESET, strncat(str1[i], str2[i], n[i]));
 
 }
 
@@ -30,7 +30,7 @@ void test_2(int i)
 
 	printf("-- ft_strncat --\n");
 	printf("str1 : %s\nstr2 : %s\nn    : %d\n", str1[i], str2[i], n[i]);
-	printf(ANSI_COLOR_GREEN "ft_strncat : %s\n" ANSI_COLOR_RESET, ft_strncat(str1[i], str2[i], n[i]));
+	printf(ANSI_COLOR_GREEN "ft_strncat : \"%s\"\n" ANSI_COLOR_RESET, ft_strncat(str1[i], str2[i], n[i]));
 
 }
 
