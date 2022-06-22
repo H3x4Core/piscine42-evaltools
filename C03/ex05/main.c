@@ -17,7 +17,7 @@ void test_1(int i)
 
 	printf("-- strlcat --\n");
 	printf("str1 : %s\nstr2 : %s\nn    : %d\n", str1[i], str2[i], n[i]);
-	printf(ANSI_COLOR_GREEN "strlcat : %s\nsize : %ld\n" ANSI_COLOR_RESET, str1[i], strlcat(str1[i], str2[i], n[i]));
+	printf(ANSI_COLOR_GREEN "strlcat : \"%s\"\nsize : %ld\n" ANSI_COLOR_RESET, str1[i], strlcat(str1[i], str2[i], n[i]));
 	printf("strlen(dest): %ld\n", strlen(str1[i]));
 	printf("strlen(src): %ld\n", strlen(str2[i]));
 }
@@ -31,7 +31,7 @@ void test_2(int i)
 
 	printf("-- ft_strlcat --\n");
 	printf("str1 : %s\nstr2 : %s\nn    : %d\n", str1[i], str2[i], n[i]);
-	printf(ANSI_COLOR_GREEN "ft_strlcat : %s\nsize : %d\n" ANSI_COLOR_RESET, str1[i], ft_strlcat(str1[i], str2[i], n[i]));
+	printf(ANSI_COLOR_GREEN "ft_strlcat : \"%s\"\nsize : %d\n" ANSI_COLOR_RESET, str1[i], ft_strlcat(str1[i], str2[i], n[i]));
 	printf("strlen(dest): %ld\n", strlen(str1[i]));
 	printf("strlen(src): %ld\n", strlen(str2[i]));
 }
