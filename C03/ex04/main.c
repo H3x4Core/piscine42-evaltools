@@ -16,7 +16,7 @@ void test_1(int i)
 
 	printf("-- strstr --\n");
 	printf("haystack : %s\nneedle : %s\n", str1[i], str2[i]);
-	printf(ANSI_COLOR_GREEN "strstr : %s\n" ANSI_COLOR_RESET, strstr(str1[i], str2[i]));
+	printf(ANSI_COLOR_GREEN "strstr : \"%s\"\n" ANSI_COLOR_RESET, strstr(str1[i], str2[i]));
 }
 
 void test_2(int i)
@@ -26,7 +26,7 @@ void test_2(int i)
 
 	printf("-- ft_strstr --\n");
 	printf("haystack : %s\nneedle : %s\n", str1[i], str2[i]);
-	printf(ANSI_COLOR_GREEN "ft_strstr : %s\n" ANSI_COLOR_RESET, ft_strstr(str1[i], str2[i]));
+	printf(ANSI_COLOR_GREEN "ft_strstr : \"%s\"\n" ANSI_COLOR_RESET, ft_strstr(str1[i], str2[i]));
 }
 
 int main (void)
